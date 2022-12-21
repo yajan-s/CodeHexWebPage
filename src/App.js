@@ -17,7 +17,7 @@ function App() {
         >
         (647) 894 3585
         </a>
-        <p>Call of inquires</p>
+        <p>Call for inquires</p>
       </header>
     </div>
   );
