@@ -15,6 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
+          Contact (647) 894 3585 for inquiries
         </a>
       </header>
     </div>
