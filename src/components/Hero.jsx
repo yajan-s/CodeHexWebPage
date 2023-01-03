@@ -10,7 +10,7 @@ const Hero = () => {
         <div>
             <h1 className='main__heading pl-12 pr-[96px] z-50 w-[500px] break-normal pt-[130px]'>BECOME A CODING EXPERT</h1>
             <button className='z-50 top -1 left-[15%] transform -translate-x-[-27%] -translate-y-[-150%]'>
-              <img src={btn}/>
+              <img src={btn} alt='CodeHex'/>
             </button>
         </div>
     <div className='grow flex invisible'></div>
