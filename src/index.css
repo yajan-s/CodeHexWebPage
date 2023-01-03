@@ -1,13 +1,78 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.purple__gradient{
+    background: #C471ED;
+    opacity: 0.56;
+    filter: blur(200px);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.blue__gradient{
+    background: #12C2E9;
+    opacity: 0.56;
+    filter: blur(200px);
+}
+
+.red__gradient{
+    background: #F64F59;
+    opacity: 0.56;
+    filter: blur(200px);
+}
+
+.main__heading{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 98px;
+    background: linear-gradient(110.8deg, rgba(255, 0, 245, 0.97) -1.59%, #9241FA 36.86%, rgba(0, 117, 255, 0.81) 68.05%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+.welcome__heading{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 55px;
+}
+
+.grad__left{
+    background: linear-gradient(110.8deg, rgba(255, 0, 245, 0.97) -1.59%, #9241FA 36.86%, rgba(0, 117, 255, 0.81) 68.05%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.grad__right{
+    background: linear-gradient(269.82deg, #BF36B2 2.23%, #AD00FE 37.64%, #205EFF 86.17%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+}
+
+.__body{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    
+    color: #A7A7A7;
+    
+}
+
+.tutor__heading{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
 }
