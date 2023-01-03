@@ -11,15 +11,17 @@ import Network from "./components/Network";
 function App() {
   return (
     <>
-    <div className="bg-black h-full relative scrollbar-hide">
-      <Navbar/>
-      <Hero/>
-      <Welcome/>
-      <Tutors/>
-      <Advice/>
-      <Assignment/>
-      <Manage/>
-      <Network/>
+    <div className="bg-black overflow-hidden">
+      <div className="bg-black h-full relative scrollbar-hide scroll-smooth">
+        <Navbar/>
+        <Hero/>
+        <Welcome/>
+        <Tutors/>
+        <Advice/>
+        <Assignment/>
+        <Manage/>
+        <Network/>
+      </div>
     </div>
     </>
   );

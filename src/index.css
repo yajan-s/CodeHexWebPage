@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;  
+  }
 .purple__gradient{
     background: #C471ED;
     opacity: 0.56;
