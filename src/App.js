@@ -11,8 +11,7 @@ import Network from "./components/Network";
 function App() {
   return (
     <>
-    <div className="bg-black overflow-hidden">
-      <div className="bg-black h-full relative scrollbar-hide scroll-smooth">
+      <div className="bg-black h-full relative scrollbar-hide scroll-smooth overflow-hidden">
         <Navbar/>
         <Hero/>
         <Welcome/>
@@ -22,7 +21,6 @@ function App() {
         <Manage/>
         <Network/>
       </div>
-    </div>
     </>
   );
 }
