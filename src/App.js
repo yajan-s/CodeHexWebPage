@@ -11,7 +11,10 @@ import Network from "./components/Network";
 function App() {
   return (
     <>
-      <div className="bg-black h-full relative scrollbar-hide scroll-smooth overflow-hidden">
+      <div className="bg-black w-full h-full relative scrollbar-hide scroll-smooth overflow-hidden">
+        <div className='purple__gradient absolute w-[510px] h-[510px] animate-loop'/>
+        <div className='blue__gradient absolute left-0 bottom-96 w-[510px] h-[510px] animate-loop'/>
+        <div className='red__gradient absolute right-4 top-[1900px] w-[510px] h-[510px] animate-loop '/>
         <Navbar/>
         <Hero/>
         <Welcome/>

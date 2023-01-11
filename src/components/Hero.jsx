@@ -16,8 +16,10 @@ const Hero = () => {
             </a>
         </div>
     <div className='grow flex invisible'></div>
-        <img src={heroFg} alt='CodeHex' className='w-[245px] h-[269px] z-50 top -1 left-[65%] transform -translate-x-[-60%] -translate-y-[-100%]'></img>
-        <img src={heroBg} alt='CodeHex' className='w-[712px] h-[646px] z-40 top -1 left-[80%] transform -translate-x-[0%] -translate-y-[0%]'></img>
+      <div className='w-[245px] h-[269px] z-50 top -1 left-[65%] transform -translate-x-[-70%] -translate-y-[-100%]'>
+        <img src={heroFg} alt='CodeHex' className='animate-hover'></img>
+      </div>
+      <img src={heroBg} alt='CodeHex' className='w-[712px] h-[646px] z-40 top -1 left-[80%] transform -translate-x-[0%] -translate-y-[0%]'></img>
     </div>
     {/* <div className='z-0 w-[578px] h-[50%] absolute blue__gradient bottom-0 left-0 top -1 left-1/8 transform -translate-x-1/2 -translate-y-[-20%]'></div>
     <div className='z-0 w-[578px] h-[50%] red__gradient absolute top -1 left-1/8 transform -translate-x-[-275%] -translate-y-[130%]'></div> */}
