@@ -9,7 +9,7 @@ const Tutors = () => {
             <div className='relative z-40'>
                 <img src={tutorbg} alt='CodeHex'></img>
                 <div className='absolute z-10 inset-0 pl-20'>
-                <img src={tutor} alt='CodeHex' ></img>
+                <img src={tutor} alt='CodeHex' className='animate-hoverInv'></img>
                 </div>
             </div>
         </div>
