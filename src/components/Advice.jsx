@@ -1,9 +1,12 @@
 import React from 'react'
 import advice from '../assets/advice.svg'
 import tutorbg from '../assets/tutor-bg.svg'
+import { MouseParallaxContainer, MouseParallaxChild } from "react-parallax-mouse";
+
 
 const Advice = () => {
   return (
+    <MouseParallaxContainer globalFactorX={0.1} globalFactorY={0.1}>
     <div className='flex flex-row pl-[5%] pt-10 justify-center'>
         <div className='flex flex-col pr-10 pl-[5%] w-[50%]'>
             <div>
@@ -23,11 +26,14 @@ const Advice = () => {
             <div className='relative z-40'>
                 <img src={tutorbg} alt='CodeHex'></img>
                 <div className='absolute z-10 -top-2 right-24'>
+                <MouseParallaxChild factorX={0.3} factorY={0.1}>
                     <img src={advice} alt='CodeHex'></img>
+                </MouseParallaxChild>
                 </div>
             </div>
         </div>
     </div>
+    </MouseParallaxContainer>
   )
 }
 

@@ -1,9 +1,12 @@
 import React from 'react'
 import manage from '../assets/manage.svg'
 import tutorbg from '../assets/tutor-bg.svg'
+import { MouseParallaxContainer, MouseParallaxChild } from "react-parallax-mouse";
+
 
 const Manage = () => {
   return (
+    <MouseParallaxContainer globalFactorX={0.1} globalFactorY={0.1}>
     <div className='flex flex-row pl-[5%] pt-8 justify-center'>
         <div className='flex flex-col pr-10 pl-[5%] w-[50%]'>
             <div>
@@ -17,11 +20,14 @@ const Manage = () => {
             <div className='relative z-40'>
                 <img src={tutorbg} alt='CodeHex'></img>
                 <div className='absolute z-10 -top-16 right-24'>
+                <MouseParallaxChild factorX={0.3} factorY={0.1}>
                     <img src={manage} alt='CodeHex'></img>
+                </MouseParallaxChild>
                 </div>
             </div>
         </div>
     </div>
+    </MouseParallaxContainer>
   )
 }
 
