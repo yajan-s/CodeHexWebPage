@@ -1,15 +1,19 @@
 import React from 'react'
 import tutor from '../assets/tutor.svg'
 import tutorbg from '../assets/tutor-bg.svg'
+import { MouseParallaxContainer, MouseParallaxChild } from "react-parallax-mouse";
 
 const Tutors = () => {
   return (
+    <MouseParallaxContainer globalFactorX={0.1} globalFactorY={0.1}>
     <div className='flex flex-row pl-[10%] pt-20 justify-center'>
         <div className='w-[600px] h-[536px]'>
             <div className='relative z-40'>
                 <img src={tutorbg} alt='CodeHex'></img>
                 <div className='absolute z-10 inset-0 pl-20'>
-                <img src={tutor} alt='CodeHex' className='animate-hoverInv'></img>
+                    <MouseParallaxChild factorX={0.3} factorY={0.1}>
+                        <img src={tutor} alt='CodeHex' className='overflow-visible'></img>
+                    </MouseParallaxChild>
                 </div>
             </div>
         </div>
@@ -33,6 +37,7 @@ const Tutors = () => {
             </div>
         </div>
     </div>
+    </MouseParallaxContainer>
   )
 }
 

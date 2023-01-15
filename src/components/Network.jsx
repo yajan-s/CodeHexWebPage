@@ -1,15 +1,19 @@
 import React from 'react'
 import network from '../assets/network.svg'
 import tutorbg from '../assets/tutor-bg.svg'
+import { MouseParallaxContainer, MouseParallaxChild } from "react-parallax-mouse";
 
 const Network = () => {
   return (
+    <MouseParallaxContainer globalFactorX={0.1} globalFactorY={0.1}>
     <div className='flex flex-row pl-[10%] justify-center'>
         <div className='w-[600px] h-[536px]'>
             <div className='relative z-40'>
                 <img src={tutorbg} alt='CodeHex'></img>
                 <div className='absolute z-10 -top-0 right-24'>
+                <MouseParallaxChild factorX={0.3} factorY={0.1}>
                 <img src={network} alt='CodeHex' ></img>
+                </MouseParallaxChild>
                 </div>
             </div>
         </div>
@@ -23,6 +27,7 @@ const Network = () => {
             </div>
         </div>
     </div>
+    </MouseParallaxContainer>
   )
 }
 

@@ -1,16 +1,21 @@
 import React from 'react'
 import assignment from '../assets/assignment.svg'
 import tutorbg from '../assets/tutor-bg.svg'
+import { MouseParallaxContainer, MouseParallaxChild } from "react-parallax-mouse";
+
 
 
 const Assignment = () => {
   return (
+    <MouseParallaxContainer globalFactorX={0.1} globalFactorY={0.1}>
     <div className='flex flex-row pl-[10%] justify-center'>
         <div className='w-[600px] h-[536px]'>
             <div className='relative z-40'>
                 <img src={tutorbg} alt='CodeHex'></img>
                 <div className='absolute z-10 -top-0 right-24'>
+                <MouseParallaxChild factorX={0.3} factorY={0.1}>
                 <img src={assignment} alt='CodeHex' ></img>
+                </MouseParallaxChild>
                 </div>
             </div>
         </div>
@@ -24,6 +29,7 @@ const Assignment = () => {
             </div>
         </div>
     </div>
+    </MouseParallaxContainer>
   )
 }
 
