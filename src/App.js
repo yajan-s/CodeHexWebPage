@@ -22,7 +22,7 @@ function App() {
     console.log(hiddenElements);
     hiddenElements.forEach((el) => observer.observe(el));
     return
-  }, [])
+  }, [observer])
   
   return (
     <>
