@@ -9,20 +9,18 @@ import Network from "./components/Network";
 import { useEffect } from "react";
 
 function App() {
-  const observer = new IntersectionObserver((entries) => {
+  useEffect(() => {
+    const hiddenElements = document.querySelectorAll('.hidden1');
+    const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        console.log(entry)
         if (entry.isIntersecting){
           entry.target.classList.add('show')
         }
       });
-  });
-  useEffect(() => {
-    const hiddenElements = document.querySelectorAll('.hidden1');
-    console.log(hiddenElements);
+    });
     hiddenElements.forEach((el) => observer.observe(el));
     return
-  }, [observer])
+  }, [])
   
   return (
     <>
