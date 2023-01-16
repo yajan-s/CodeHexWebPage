@@ -6,9 +6,24 @@ import Advice from "./components/Advice";
 import Assignment from "./components/Assignment";
 import Manage from "./components/Manage";
 import Network from "./components/Network";
-
+import { useEffect } from "react";
 
 function App() {
+  const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting){
+          entry.target.classList.add('show')
+        }
+      });
+  });
+  useEffect(() => {
+    const hiddenElements = document.querySelectorAll('.hidden1');
+    console.log(hiddenElements);
+    hiddenElements.forEach((el) => observer.observe(el));
+    return
+  }, [])
+  
   return (
     <>
       <div className="bg-black w-full h-full relative scrollbar-hide scroll-smooth overflow-hidden">

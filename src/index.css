@@ -79,3 +79,44 @@ background-clip: text;
     font-size: 32px;
     line-height: 44px;
 }
+
+.hidden1{
+    opacity: 0;
+    transform: translateX(-100%);
+    filter: blur(5px);
+    transition: all 0.75s;
+}
+
+.hidden2{
+    opacity: 0;
+    transform: translateX(100%);
+    filter: blur(5px);
+    transition: all 0.75s;
+    transition-delay: 100ms;
+}
+
+.hidden3{
+    opacity: 0;
+    transform: translateX(100%);
+    filter: blur(5px);
+    transition: all 0.75s;
+    transition-delay: 150ms;
+}
+
+.hidden4{
+    opacity: 0;
+    transform: translateX(100%);
+    filter: blur(5px);
+    transition: all 0.75s;
+    transition-delay: 175ms;
+}
+
+.show{
+    opacity: 1;
+    transform: translateX(0px);
+    filter: blur(0px);
+}
+
+.parallax_overflow{
+    overflow: visible;
+}
